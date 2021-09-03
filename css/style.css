@@ -47,7 +47,7 @@ html {
     width: 100%; height: 100px; text-align: center; line-height: 100px; color: #fff; font-size: 40px; background: skyblue;
 }
 .pr_container {
-    display: flex; width: 80%; margin: auto; margin-top: 100px;
+    display: flex; width: 80%; margin: auto; margin-top: 100px; gap: 20px;
 }
 .pr_profile {
     flex: 1; padding-left: 60px;
@@ -71,7 +71,7 @@ html {
     float: left; padding-top: 20px; padding-left: 10px;
 }
 .pr_txt {
-    line-height: 1.5; float: left; padding-top: 20px; padding-left: 10px;
+    line-height: 1.5; float: left; _padding-top: 20px; padding-left: 10px;
 }
 .pr_txt>div {
     font-weight: bold;
@@ -343,10 +343,15 @@ html {
     }
     
     
-    /*********** s2 포트폴리오 ********/
+/*********** s2 포트폴리오 ********/
+    .s2>h1 {
+        height: 50px;
+        line-height: 50px;
+        font-size: 23px;
+    }
     .slide {
         flex-direction: column;
-        margin: 0px 67px;
+        margin: 0px 35px;
     }
     .slide>.image {
         width: 82%;
@@ -358,11 +363,30 @@ html {
         top: 10vh;
         width: 80%;
     }
+    .slide .pf_txt_container .pf_title {
+        height: 35px;
+        line-height: 35px;
+        font-size: 16px;
+    }
+    .slide .pf_txt_container table {
+        width: 95%;
+        margin: auto;
+        line-height: 1.5;
+        font-size: 13px;
+        margin-top: 10px;
+    }
     .pf_gosite {
-        margin-top: 30px;
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .pf_gosite a {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 14px;
     }
     .left_arrow, .right_arrow {
-        width: 30px;
+        width: 20px; top: 30%;
     }
  
 }
